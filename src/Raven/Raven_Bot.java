@@ -172,6 +172,7 @@ public class Raven_Bot extends MovingEntity {
 
         //update the position
         m_vPosition.add(m_vVelocity);
+        
 
         //if the vehicle has a non zero velocity the heading and side vectors must 
         //be updated
@@ -180,6 +181,10 @@ public class Raven_Bot extends MovingEntity {
 
             m_vSide = m_vHeading.Perp();
         }
+        
+        // Debug to show botPos
+        //System.out.println("x : " + m_vPosition.x);
+        //System.out.println("y : " + m_vPosition.y);
     }
 
     /**
