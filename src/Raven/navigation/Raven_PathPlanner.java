@@ -274,6 +274,8 @@ public class Raven_PathPlanner {
 
         //make a note of the target position.
         m_vDestinationPos = new Vector2D(TargetPos);
+        System.out.println("X : " + TargetPos.x);
+        System.out.println("Y : " + TargetPos.y);
 
         //if the target is walkable from the bot's position a path does not need to
         //be calculated, the bot can go straight to the position by ARRIVING at
